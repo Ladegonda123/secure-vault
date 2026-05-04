@@ -1,4 +1,4 @@
-import { TreeItem } from '../../types/tree';
+import type { TreeItem } from '../../types/tree';
 import { TreeNode } from '../TreeNode/TreeNode';
 import { flattenVisibleNodes } from '../../utils/treeHelpers';
 import styles from './FileExplorer.module.css';
@@ -56,8 +56,6 @@ export function FileExplorer({
     activeExpandedIds = filtered;
   }
 
-  const visibleNodes = flattenVisibleNodes(data, activeExpandedIds);
-
   function handleKeyDown(e: React.KeyboardEvent) {
     const nodes = flattenVisibleNodes(data, activeExpandedIds);
     const idx = focusedId ? nodes.findIndex((n) => n.id === focusedId) : -1;
@@ -97,7 +95,7 @@ export function FileExplorer({
 
   // Filter visible nodes by search query for rendering
   const renderItems = searchQuery
-    ? filterVisibleItems(data, searchQuery, activeExpandedIds)
+    ? filterVisibleItems(data, searchQuery)
     : data;
 
   return (
@@ -139,8 +137,7 @@ function itemMatchesQuery(item: TreeItem, query: string): boolean {
 
 function filterVisibleItems(
   items: TreeItem[],
-  query: string,
-  expandedIds: Set<string>
+  query: string
 ): TreeItem[] {
   return items.filter((item) => itemMatchesQuery(item, query));
 }

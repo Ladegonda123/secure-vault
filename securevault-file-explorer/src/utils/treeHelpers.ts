@@ -1,4 +1,4 @@
-import { TreeItem } from '../types/tree';
+import type { TreeItem } from '../types/tree';
 
 export function flattenVisibleNodes(
   items: TreeItem[],

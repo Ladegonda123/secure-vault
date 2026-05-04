@@ -1,1 +1,19 @@
+:root {
+  --color-bg:           #0d0f14;
+  --color-surface:      #161b25;
+  --color-border:       #1e2a3a;
+  --color-text-primary: #e2e8f0;
+  --color-text-muted:   #4a6080;
+  --color-accent:       #00d4ff;
+  --color-selected-bg:  #0a2035;
+  --color-hover-bg:     #1a2535;
+  --color-folder:       #f59e0b;
+  --color-file:         #60a5fa;
+  --font-mono:          'JetBrains Mono', 'Fira Code', monospace;
+  --font-sans:          'DM Sans', system-ui, sans-serif;
+  --radius:             4px;
+  --indent-size:        16px;
+}
 
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--color-bg); color: var(--color-text-primary); font-family: var(--font-sans); }

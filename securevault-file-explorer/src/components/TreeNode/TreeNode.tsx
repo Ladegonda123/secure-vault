@@ -1,4 +1,4 @@
-import { TreeItem } from '../../types/tree';
+import type { TreeItem } from '../../types/tree';
 import { getFileIcon } from '../../utils/fileHelpers';
 import styles from './TreeNode.module.css';
 

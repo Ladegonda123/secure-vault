@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { TreeItem, SelectedFile } from '../types/tree';
+import type { TreeItem, SelectedFile } from '../types/tree';
 import { buildBreadcrumb } from '../utils/treeHelpers';
 
 export function useTreeState() {

@@ -1,4 +1,4 @@
-import { SelectedFile } from '../../types/tree';
+import type { SelectedFile } from '../../types/tree';
 import { getFileType } from '../../utils/fileHelpers';
 import styles from './PropertiesPanel.module.css';
 
