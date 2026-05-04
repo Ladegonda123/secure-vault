@@ -35,7 +35,6 @@ export function TreeNode({
           className={`${styles.row} ${styles.folder} ${isFocused ? styles.focused : ''}`}
           style={indentStyle}
           onClick={() => onToggleFolder(item.id)}
-          onMouseEnter={() => onFocus(item.id)}
           role="button"
           aria-expanded={isExpanded}
           tabIndex={-1}
