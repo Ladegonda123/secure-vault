@@ -1,0 +1,64 @@
+.row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 28px;
+  cursor: pointer;
+  user-select: none;
+  border-left: 2px solid transparent;
+  padding-right: 8px;
+  font-size: 13px;
+  color: var(--color-text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.row:hover {
+  background: var(--color-hover-bg);
+}
+
+.focused {
+  background: var(--color-hover-bg);
+  outline: 1px solid var(--color-border);
+  outline-offset: -1px;
+}
+
+.selected {
+  background: var(--color-selected-bg);
+  border-left-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.chevron {
+  font-size: 8px;
+  color: var(--color-text-muted);
+  width: 10px;
+  flex-shrink: 0;
+}
+
+.folderIcon {
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.fileIcon {
+  font-size: 14px;
+  flex-shrink: 0;
+  margin-left: 16px;
+}
+
+.name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+.folder .name {
+  color: var(--color-text-primary);
+  font-weight: 500;
+}
+
+.file .name {
+  color: var(--color-file);
+}
