@@ -8,11 +8,11 @@
 ![CSS Modules](https://img.shields.io/badge/CSS-Modules-000000?logo=cssmodules&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-[Live Demo](https://your-deployment-url.com)
+[Live Demo](https://secure-vault-tau-rouge.vercel.app/)
 
 ---
 
-<!-- Add screenshot here after deployment -->
+![SecureVault File Explorer](public/preview.png)
 
 ---
 
